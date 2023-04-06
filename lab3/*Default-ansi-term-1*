@@ -1,0 +1,27 @@
+[16:54:22] [~/Documents/pp-labs/lab3] git(master) 🔥 ❱❱❱ fish
+Welcome to fish, the friendly interactive shell
+Type help for instructions on how to use fish
+haziqfaiz@fedora ~/D/p/lab3 (master)> mpicc 2.c -o 2                                                                                                                                                                                   (base) 
+haziqfaiz@fedora ~/D/p/lab3 (master)> mpirun -np 4 ./2                                                                                                                                                                                 (base) 
+Process 0 out of 4
+Process 1 out of 4
+Process 2 out of 4
+Process 3 out of 4
+haziqfaiz@fedora ~/D/p/lab3 (master)> mpicc 2.c -o 2                                                                                                                                                                                   (base) 
+haziqfaiz@fedora ~/D/p/lab3 (master)> mpirun -np 4 ./2                                                                                                                                                                                 (base) 
+wq
+Input a number: Process 0 out of 4
+Process 1 out of 4
+Process 2 out of 4
+Process 3 out of 4
+Input a number: Input a number: Input a number: ⏎                                                                                                                                                                                             
+haziqfaiz@fedora ~/D/p/lab3 (master)> mpicc 2.c -o 2                                                                                                                                                                                   (base) 
+haziqfaiz@fedora ~/D/p/lab3 (master)> mpirun -np 4 ./2                                                                                                                                                                                 (base) 
+ 
+21
+Input a number: Input a number: Input a number: Input a number: ⏎                                                                                                                                                                         
+haziqfaiz@fedora ~/D/p/lab3 (master)> mpicc 2.c -o 2                                                                                                                                                                                   (base) 
+haziqfaiz@fedora ~/D/p/lab3 (master)> mpirun -np 4 ./2                                                                                                                                                                                 (base) 
+21
+Enter a number: Enter a number: Enter a number: Enter a number: ⏎                                                                                                                                                                         
+haziqfaiz@fedora ~/D/p/lab3 (master)>                                                                                                                                                                                                  (base) 
