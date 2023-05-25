@@ -46,6 +46,7 @@ int main(int argc, char *argv[]){
     localSum = localSum * w/2; 
 
     MPI_Reduce(&localSum,&sum,1,MPI_DOUBLE,MPI_SUM,0,MPI_COMM_WORLD);
+    //sum = sum +f(a+w*(n-1));
 
     //printf("\nlocal sum : %f \n",localSum);
     for(i=0;i<size;i++){
