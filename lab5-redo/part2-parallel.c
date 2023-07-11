@@ -21,8 +21,8 @@ int main(int argc, char *argv[]){
         double step = 1.0/interval;
         double x; double total=0; int i;
 
-        for(int i=rank+1;i<interval;i=i+size+1){
-            x=(step/2); + step*i;
+        for(int i=rank;i<interval;i=i+size){
+            x=(step/2) + step*i;
             total = total+f(x);
         }
         return total*step;
@@ -44,7 +44,7 @@ int main(int argc, char *argv[]){
 
 
     if(!rank){
-        printf("\nPi is %1.20f using %d intervals",result,interval);
+        printf("\nPi is %1.20f using %d intervals.",result,interval);
         printf("\nElapsed time is %f",end-start);
     }
     MPI_Finalize();

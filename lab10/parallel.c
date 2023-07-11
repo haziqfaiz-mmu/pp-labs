@@ -80,8 +80,8 @@ int main(int argC, char* argV[])
 	iterations = params[6];
  
 	allocatePicture(width,height);
-    //double begin = omp_get_wtime(); 
-	clock_t begin=clock();
+    double begin = omp_get_wtime(); 
+	//clock_t begin=clock();
 	juliaSet(width,height,c,radius,iterations);
     double end = omp_get_wtime(); 
 	//clock_t end=clock();

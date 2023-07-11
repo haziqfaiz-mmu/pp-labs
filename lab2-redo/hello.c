@@ -14,7 +14,5 @@ int main(int argc, char *argv[]){
         if(i==rank)
              printf("Process %d on %s out of %d\n",rank,processor_name,numprocs);
     }
-    //printf("Process %d on %s out of %d\n",rank,processor_name,numprocs);
-
     MPI_Finalize();
 }

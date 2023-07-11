@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
         } 
         fscanf(infile,"%d", &size); // Find out how big the data is 
         printf("Size = %d\n",size); 
-        eachSize=size/4 +1;
+        eachSize=size/psize+1;
         
     }
     //Broadcast each size
